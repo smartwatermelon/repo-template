@@ -45,5 +45,6 @@ one-time action per new repo:
      -f default_workflow_permissions=read
    ```
 
-3. **Branch protection** (optional but recommended) — add `claude-review / run-review` as a
-   required status check under Settings → Branches.
+3. **Branch protection** (optional but recommended) — add
+   `standards-check / run-standards-check` as a required status check under
+   Settings → Branches. (`claude-review / run-review` is retired in W3.)
