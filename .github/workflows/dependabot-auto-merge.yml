@@ -12,7 +12,9 @@ jobs:
   dependabot-auto-merge:
     uses: smartwatermelon/github-workflows/.github/workflows/dependabot-auto-merge.yml@dependabot-auto-merge-v3.1.0
     with:
-      sanity_checks: 'standards-check' # standards-check.yml; docs and config only, no code
+      # The full check name: the gate matches 'standards-check' only as a
+      # whole name or a matrix prefix, so the short form never passed.
+      sanity_checks: 'standards-check / run-standards-check' # docs and config only, no code
     secrets: # these two by name; never `secrets: inherit`
       MERGE_APP_CLIENT_ID: ${{ secrets.MERGE_APP_CLIENT_ID }}
       MERGE_APP_PRIVATE_KEY: ${{ secrets.MERGE_APP_PRIVATE_KEY }}
