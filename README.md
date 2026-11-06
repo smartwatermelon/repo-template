@@ -18,6 +18,8 @@ new-smartwatermelon-repo.sh <name>
 - `.github/workflows/dependabot-auto-merge.yml` — auto-approves and merges patch/minor
   Dependabot PRs once CI passes.
 - `.github/dependabot.yml` — weekly GitHub Actions dependency bumps.
+- `.github/CODEOWNERS` — requests review from `@twistedmelonman` on every PR, so
+  agent-opened PRs reach Andrew without a manual request.
 - `CLAUDE.md` — starter file for repo-specific Claude Code guidance.
 
 See `smartwatermelon/github-workflows`'s `README.md` for the full documentation on each
